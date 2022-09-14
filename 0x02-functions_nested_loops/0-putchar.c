@@ -1,6 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h>
-/**
+#include "main.h"
+
+/*
  * main - prints putchar
  *
  * Description: prints putchar while returning 0
@@ -9,6 +9,14 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
-	return(0);
+	int i = 0;
+	char a[8] = "_putchar";
+
+	while (i < 8)
+	{
+		_putchar(a[i]);
+		i++;
+	}
+	_putchar('\n');
+	return (0);
 }
