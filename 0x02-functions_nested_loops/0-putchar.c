@@ -1,22 +1,22 @@
 #include "main.h"
-
-/*
- * main - prints putchar
+/**
+ * main - prints _putchar
  *
- * Description: prints putchar while returning 0
+ * Description: This returns _putchar
  *
- * Return: Always 0 (Success)
+ * Return: Successfully return 0
  */
+
 int main(void)
 {
-	int i = 0;
-	char a[8] = "_putchar";
+	char *sh = "Holberton";
 
-	while (i < 8)
+	while (*sh)
 	{
-		_putchar(a[i]);
-		i++;
+		_putchar(*sh);
+		sh++;
 	}
 	_putchar('\n');
+
 	return (0);
 }
