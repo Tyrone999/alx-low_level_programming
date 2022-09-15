@@ -2,6 +2,7 @@
 
 /**
  * print_triangle - preints a triangle
+ * @size: Size of the triangle
  */
 void print_triangle(int size)
 {
@@ -25,6 +26,6 @@ void print_triangle(int size)
 		}
 		_putchar('\n');
 	}
-	if(size <= 0)
+	if (size <= 0)
 		_putchar('\n');
 }
