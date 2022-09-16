@@ -2,7 +2,7 @@
 
 /**
  * print_number - Uses a recursive way to print entire provided int
- * @n; n is the provided int
+ * @n: n is the provided int
  */
 void print_number(int n)
 {
@@ -13,7 +13,7 @@ void print_number(int n)
 		n = n * -1;
 	}
 	/* Uses own function to print previous numbers using _putchar*/
-	if((n / 10) != 0)
+	if ((n / 10) != 0)
 		print_number(n / 10);
 	_putchar(n % 10 + '0');
 
