@@ -6,17 +6,20 @@
  */
 void print_number(int n)
 {
+	unsigned int number;
+
+	number = n;
 	/* Check if negative and set positive*/
 	if (n < 0)
 	{
 		_putchar('-');
-		n = n * -1;
+		number = -number;
 	}
 	/* Uses own function to print previous numbers using _putchar*/
-	if ((n / 10) != 0)
+	if (number > 9)
 	{
-		print_number(n / 10);
+		print_number(number / 10);
 	}
-	_putchar(n % 10 + '0');
+	_putchar(number % 10 + '0');
 
 }
