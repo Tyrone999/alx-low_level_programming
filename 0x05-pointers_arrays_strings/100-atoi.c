@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int i;
-	unsigned int finalValue = 0;	
+	unsigned int finalValue = 0;
 	bool positive = true;
 	bool done = false;
 
@@ -41,7 +41,7 @@ int _atoi(char *s)
 		i++;
 	}
 
-	  if (positive == false)
+	if (positive == false)
 		finalValue = -finalValue;
 
 	return (finalValue);
