@@ -25,9 +25,9 @@ char *_strncat(char *dest, char *src, int n)
 	/* concatenate src to dest*/
 	for (j = 0; j < n; ++j, ++length)
 	{
-	
+
 		/* terminating the s1 string */
-		if(j > srcLength)
+		if (j > srcLength)
 		{
 			dest[length] = '\0';
 			break;
